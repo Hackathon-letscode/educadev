@@ -1,0 +1,30 @@
+{
+  "name": "educadev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --inspect src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hackathon-letscode/educadev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hackathon-letscode/educadev/issues"
+  },
+  "homepage": "https://github.com/Hackathon-letscode/educadev#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.6",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
