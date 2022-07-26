@@ -26,11 +26,11 @@ mongoose.connect(
 );
 
 // Fazendo o Require do Schema
-//  requireDir('./models');
+ requireDir('./models');
 
 // // consumindo a rota
-// app.use('/api', require('./routers/index.routes'));
-// app.get('/', (req, res) => res.json({ message: 'Funcionando!' }));
+app.use('/api', require("./routes/index.routes"));
+app.get('/', (req, res) => res.json({ message: 'Funcionando!' }));
 
 
 // TODO instanciando o swagger
