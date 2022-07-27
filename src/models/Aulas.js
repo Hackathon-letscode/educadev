@@ -9,7 +9,7 @@ const AulasSchema = new mongoose.Schema ({
         type: String,
         required: true
     },
-    tipo: {
+    titulo: {
         type: String,
         required: true
     },
