@@ -6,11 +6,11 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Menu.css";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/logo2.png";
 
 function NavScrollExample() {
   return (
-    <Navbar className="Menu col-12" bg="light" expand="lg">
+    <Navbar className="Menu col-12" expand="lg">
       <Container fluid>
         {/* Educa<span>Dev</span> */}
         {/* <img className="w-100" src={Logo} alt="" /> */}

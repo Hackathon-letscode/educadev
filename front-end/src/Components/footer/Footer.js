@@ -1,4 +1,4 @@
-import React, { Link } from 'react'
+import React from 'react'
 import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa"
 import "./Footer.css"
 

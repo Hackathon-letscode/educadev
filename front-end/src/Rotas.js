@@ -5,10 +5,11 @@ import Javascript from './Pages/Javascript'
 import Cadastro from './Pages/Cadastro';
 import Login from './Pages/Login'
 import PostarAula from './Pages/PostarAula';
+import "./Rotas.css"
 
 const Rotas = () => {
   return (
-        <main>
+        <main className='main'>
             <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/home" element={<Home />} />
