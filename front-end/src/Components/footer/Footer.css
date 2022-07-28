@@ -1,0 +1,17 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.Footer .redes_sociais {
+    padding: 10px;
+}
+
+.redes_sociais a {
+    font-size: 1.5em;
+    margin: 0px 20px;
+}

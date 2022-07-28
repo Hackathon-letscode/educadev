@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Menu.css";
-import Logo from "../assets/Logo.png";
+import Logo from "../../assets/Logo.png";
 
 function NavScrollExample() {
   return (
@@ -14,7 +14,7 @@ function NavScrollExample() {
       <Container fluid>
         {/* Educa<span>Dev</span> */}
         {/* <img className="w-100" src={Logo} alt="" /> */}
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/home">
           <img src={Logo} alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -38,6 +38,7 @@ function NavScrollExample() {
             </NavDropdown>
             <Nav.Link href="/cadastro">Cadastre-se</Nav.Link>
             <Nav.Link href="/Login">Login</Nav.Link>
+            <Nav.Link href="/postaraula">Postar Aula</Nav.Link>
             {/* <Nav.Link href="#" disabled>
               Link
             </Nav.Link> */}

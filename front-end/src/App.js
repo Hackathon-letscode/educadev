@@ -1,6 +1,7 @@
 import Rotas from "./Rotas";
 import { BrowserRouter } from "react-router-dom";
-import Menu from "./Components/Menu";
+import Menu from "./Components/Menu/Menu";
+import Footer from "./Components/footer/Footer";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Menu />
         <Rotas />
+        <Footer />
       </BrowserRouter>
     </div>
   );

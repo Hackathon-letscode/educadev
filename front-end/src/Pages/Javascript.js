@@ -37,7 +37,7 @@
 // export default BasicExample;
 
 import React from 'react'
-import Cards from '../Components/Cards'
+import Cards from '../Components/Card/Cards'
 
 const Javascript = () => {
   return (

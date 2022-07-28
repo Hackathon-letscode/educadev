@@ -22,7 +22,7 @@ export function MainLogin() {
           Entrar
         </Button>
         <Row className="mt-3 mx-auto EsqueciCadastro col-12 text-center justify-content-between row">
-          <Link className="col-auto">Cadastre-se</Link>
+          <Link href="/cadastro" className="col-auto">Cadastre-se</Link>
           <Link className="col-auto">Esqueci minha senha</Link>
         </Row>
       </Form>

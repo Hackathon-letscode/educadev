@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Javascript from './Pages/Javascript'
 import Cadastro from './Pages/Cadastro';
 import Login from './Pages/Login'
+import PostarAula from './Pages/PostarAula';
 
 const Rotas = () => {
   return (
@@ -13,7 +14,7 @@ const Rotas = () => {
                 <Route path="/home" element={<Home />} />
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/javascript" exact element={<Javascript />} />
-                {/* <Route path="/login" exact element={<Login />} /> */}
+                <Route path="/postaraula" element={<PostarAula />} />
             </Routes>
         </main>
   );

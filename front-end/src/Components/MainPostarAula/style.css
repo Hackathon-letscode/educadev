@@ -1,0 +1,37 @@
+.cadastro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+  }
+  
+  .cadastro-container button {
+    width: 300px;
+  }
+  
+  .cadastro-container #formBasicCheckbox {
+    border: 1px solid;
+    color: #8d949a;
+  }
+  .cadastro-container .form-label{
+    font-weight: 400;
+    color: #1b1b1b;
+  }
+  .cadastro-container .form-control:focus{
+    border-color: #039fbe;
+    box-shadow: none;
+  }
+  .cadastro-container .form-check-input:checked{
+    background-color: #039fbe;
+  }
+  .cadastro-container .form-check-input:focus{
+    box-shadow: none;
+  }
+
+  .cadastro-container .Button {
+    background-color: #039fbe;
+  }
+
+  .cadastro-container .Button:hover {
+    background-color: #48a8bb;
+  }
