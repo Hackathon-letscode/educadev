@@ -1,10 +1,10 @@
 import React from 'react';
-import { MainLogin } from '../Components/MainLogin/index';
+import { MainCadastro } from '../Components/MainCadastro';
 
 const Login = () => {
   return (
     <>
-      <MainLogin />
+      <MainCadastro />
     </>
   );
 };
