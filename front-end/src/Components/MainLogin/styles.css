@@ -12,7 +12,7 @@
   -webkit-box-shadow: 0px 0px 40px -7px rgba(0, 0, 0, 0.23);
   box-shadow: 0px 0px 40px -7px rgba(0, 0, 0, 0.23);
 }
-.cadastro-container Form input{
+.cadastro-container Form input {
   border: none;
   border-bottom: 1px solid #6c757d61;
   border-bottom-right-radius: 0;
@@ -21,12 +21,10 @@
 
 .cadastro-container button {
   width: 100% !important;
-  background-color:  #039fbe;
+  background-color: #039fbe;
   border: none;
 }
 
-.cadastro-container .EsqueciCadastro{
-  font-size: 14px ;
+.cadastro-container .EsqueciCadastro {
+  font-size: 14px;
 }
-
-

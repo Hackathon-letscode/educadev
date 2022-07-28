@@ -1,5 +1,5 @@
-import React from 'react';
-import { MainLogin } from '../Components/MainLogin/index';
+import React from "react";
+import { MainLogin } from "../Components/MainLogin/index";
 
 const Login = () => {
   return (
