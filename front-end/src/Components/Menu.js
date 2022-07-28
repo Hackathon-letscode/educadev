@@ -4,12 +4,17 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Menu.css"
+import Logo from "../assets/Logo.png"
 
 function NavScrollExample() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className="Menu" bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+      {/* Educa<span>Dev</span> */}
+      {/* <img className="w-100" src={Logo} alt="" /> */}
+        <Navbar.Brand href="#"><img src={Logo} alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -17,13 +22,11 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
+            <Nav.Link to="/home" href="home">Home</Nav.Link>
+            {/* <Nav.Link href="/javascript">Materias</Nav.Link> */}
+            <NavDropdown title="Matérias" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="/javascript">JavaScript</NavDropdown.Item>
+              <NavDropdown.Item href="/matematica">matemática</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
                 Something else here

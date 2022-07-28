@@ -1,12 +1,12 @@
 import Rotas from "./Rotas";
 import { BrowserRouter } from "react-router-dom";
-import NavScrollExample from "./Components/Menu";
+import Menu from "./Components/Menu";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <NavScrollExample />
+        <Menu />
         <Rotas />
       </BrowserRouter>
     </div>

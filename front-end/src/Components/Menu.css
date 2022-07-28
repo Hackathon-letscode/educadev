@@ -1,25 +1,8 @@
-.Menu {
-    background-color: #ccc;
-    display: flex;
-    justify-content: space-between;
+.nowrap {
+    flex-wrap: nowrap !important;
+    flex-direction: row;
 }
 
 .Menu img {
-    width: 200px;
-    height: 80px;
-    background-color: red;
-}
-
-.Menu ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    background-color: black;
-}
-
-.Menu li {
-    display: flex;
-    justify-content: space-between;
-    background-color: yellow;
+    width: 180px;
 }
