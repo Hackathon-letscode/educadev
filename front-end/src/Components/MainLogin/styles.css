@@ -1,11 +1,9 @@
-main{
-  background-color: #fcce0d;
-}
 .cadastro-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh;
+  margin-top: -82px; */
 }
 .cadastro-container Form {
   border-radius: 15px;

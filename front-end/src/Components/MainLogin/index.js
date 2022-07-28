@@ -8,7 +8,7 @@ import "./styles.css";
 
 export function MainLogin() {
   return (
-    <Container className="cadastro-container">
+    <Container className="mt-5 cadastro-container">
       <Form className="col-12 col-md-6 col-lg-4">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Telefone</Form.Label>

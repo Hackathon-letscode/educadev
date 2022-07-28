@@ -6,7 +6,7 @@ import img1 from "../assets/imagemHack.png";
 function Cards({titulo, descricao}) {
   return (
     <>
-      <Row>
+      <Row className='m-auto'>
         <Card className="mx-auto col-auto mt-3" style={{ width: "18rem" }}>
           <Card.Img variant="top" src={img1} />
           <Card.Body>
