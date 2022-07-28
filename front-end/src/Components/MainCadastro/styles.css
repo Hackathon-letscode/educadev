@@ -1,0 +1,10 @@
+.cadastro-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cadastro-container button{
+  width: 300px;
+}
