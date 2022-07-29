@@ -17,7 +17,31 @@ position: relative;
     text-shadow: 3px 2px 4px rgba(191,191,191,0.28);
 }
 
-.button {
+@media (max-width: 1024px) {
+    .mid-banner h3 {
+        font-size: 30px;
+    }
+
+    .button {
+        margin-bottom: 10px;
+        width: 100px;
+    }
+    
+    .informacoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.089);
+        margin: 10px 0px;
+    }
+    
+    .informacoes p {
+        padding: 10px;
+    }
+}
+
+/* .button {
     margin-bottom: 10px;
     width: 100px;
 }
@@ -33,4 +57,4 @@ position: relative;
 
 .informacoes p {
     padding: 10px;
-}
+} */

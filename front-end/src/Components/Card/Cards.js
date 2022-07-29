@@ -24,7 +24,7 @@ function Cards({titulo, descricao, imagem, id}) {
             <Card.Text>
               {descricao}
             </Card.Text>
-            <Link to={`/videoaula/${id}`}><Button onClick={handleClick()} variant="primary">Ver Mais</Button></Link>
+            <Link to={`/javascript/${id}`}><Button onClick={handleClick()} variant="primary">Ver Mais</Button></Link>
           </Card.Body>
         </Card>
       {/* </Row> */}
