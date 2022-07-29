@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-// const cors = require('cors');
+const cors = require('cors');
 const requireDir = require('require-dir');
 require("dotenv").config({
   path: process.env.NODE_ENV === "test" ? ".env.test" : ".env"
@@ -14,7 +14,7 @@ require("dotenv").config({
 const app = express();
 
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
 // Iniciando o DB
 mongoose.connect(

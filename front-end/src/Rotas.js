@@ -5,6 +5,7 @@ import Javascript from './Pages/Javascript'
 import Cadastro from './Pages/Cadastro';
 import Login from './Pages/Login'
 import PostarAula from './Pages/PostarAula';
+import VideoAula from "./Pages/VideoAula"
 import "./Rotas.css"
 
 const Rotas = () => {
@@ -16,6 +17,7 @@ const Rotas = () => {
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/javascript" exact element={<Javascript />} />
                 <Route path="/postaraula" element={<PostarAula />} />
+                <Route path="/videoaula" element={<VideoAula/>} />
             </Routes>
         </main>
   );

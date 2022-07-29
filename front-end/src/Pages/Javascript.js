@@ -1,48 +1,33 @@
-// import Button from "react-bootstrap/Button";
-// import Row from "react-bootstrap/Row";
-// import Card from "react-bootstrap/Card";
-// import img1 from "../assets/imagemHack.png";
 
-// function BasicExample() {
-//   return (
-//     <>
-//       <Row>
-//         <Card className="mx-auto col-auto mt-3" style={{ width: "18rem" }}>
-//           <Card.Img variant="top" src={img1} />
-//           <Card.Body>
-//             <Card.Title>Card Title</Card.Title>
-//             <Card.Text>
-//               Some quick example text to build on the card title and make up the
-//               bulk of the card's content.
-//             </Card.Text>
-//             <Button variant="primary">Ver Mais</Button>
-//           </Card.Body>
-//         </Card>
-//         <Card className="mx-auto col-auto mt-3" style={{ width: "18rem" }}>
-//           <Card.Img variant="top" src={img1} />
-//           <Card.Body>
-//             <Card.Title>Card Title</Card.Title>
-//             <Card.Text>
-//               Some quick example text to build on the card title and make up the
-//               bulk of the card's content.
-//             </Card.Text>
-//             <Button variant="secondary">Ver Mais!</Button>
-//           </Card.Body>
-//         </Card>
-//       </Row>
-//     </>
-//   );
-// }
 
-// export default BasicExample;
-
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Cards from '../Components/Card/Cards'
+import img1 from "../assets/imagemHack.png";
+import axios from "axios"
 
 const Javascript = () => {
+
+  // const [titulo, setTitulo] = useState()
+  // const [descricao, setDescricao] = useState()
+
+  const [dados, setDados] = useState([])
+
+  useEffect(() => {
+    async function exibirAulas() {
+      const response = await axios.get("http://localhost:3001/api/aulas")
+      //  setTitulo(response.data.titulo)
+      //  setDescricao(response.data.descricao)
+      setDados(response.data)
+       console.log(response.data)
+      }
+      exibirAulas()
+  },[])
+
   return (
     <div>
-        <Cards titulo="Meu titulo" descricao="Neste video estaremos explicando como funciona..." />
+          {dados.map((dado) => {
+            return <Cards key={dado._id} id={dado._id} titulo={dado.titulo} descricao={dado.descricao} imagem={img1}/>
+          })}
     </div>
   )
 }
