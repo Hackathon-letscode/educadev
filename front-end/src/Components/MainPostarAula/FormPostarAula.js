@@ -3,11 +3,47 @@ import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
+import axios from "axios"
+import { useState } from "react";
 
 function FormPostarAula() {
+
+  const [materia, setMateria] = useState()
+  const [titulo, setTitulo] = useState()
+  const [professor, setProfessor] = useState()
+  const [descricao, setDescricao] = useState()
+
+  function handleSubmit(event) {
+    event.preventDefault()
+  }
+
+  async function handleClick() {
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/api/aulas",
+        {
+          materia: materia,
+          titulo: titulo,
+          professor: professor,
+          descricao: descricao,
+        }
+      );
+      console.log(response)
+      if (response.data.titulo) {
+        alert("Aula Cadastrada com sucesso")
+      }
+    }
+    catch(error) {
+      alert(error.response.data)
+    }
+  }
+
+
+
+
   return (
     <Container className="cadastro-container">
-      <Form className="mt-5 col-md-6 col-lg-4">
+      <Form className="mt-5 col-md-6 col-lg-4" onSubmit={handleSubmit}>
         <fieldset>
           {/* <Form.Group className="mb-3">
           <Form.Label>Digite a matéria da aula:</Form.Label>
@@ -16,11 +52,16 @@ function FormPostarAula() {
 
           <Form.Group className="mb-3">
             <Form.Label>Selecione a matéria:</Form.Label>
-            <Form.Select>
+            {/* <Form.Select onChange={(e) => setMateria(e.target.value)}>
               <option>JavaScript</option>
               <option>matemática</option>
               <option>Português</option>
-            </Form.Select>
+            </Form.Select> */}
+            <Form.Control
+              type="text"
+              placeholder="Titúlo da aula"
+              onChange={(e) => setMateria(e.target.value)}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3">
@@ -28,7 +69,7 @@ function FormPostarAula() {
             <Form.Control
               type="text"
               placeholder="Titúlo da aula"
-              controlId="formBasicPassword"
+              onChange={(e) => setTitulo(e.target.value)}
             />
           </Form.Group>
 
@@ -37,7 +78,7 @@ function FormPostarAula() {
             <Form.Control
               type="text"
               placeholder="Nome do professor"
-              controlId="formBasicPassword"
+              onChange={(e) => setProfessor(e.target.value)}
             />
           </Form.Group>
 
@@ -46,10 +87,16 @@ function FormPostarAula() {
             <Form.Control
               type="text"
               placeholder="Descrição"
-              controlId="formBasicPassword"
+              onChange={(e) => setDescricao(e.target.value)}
             />
           </Form.Group>
-          <Button className="Button" type="submit">Cadastrar</Button>
+          <Button 
+            className="Button"
+            type="submit"
+            onClick={handleClick}
+            >
+              Cadastrar
+          </Button>
         </fieldset>
       </Form>
     </Container>
