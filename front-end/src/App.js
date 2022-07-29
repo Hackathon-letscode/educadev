@@ -6,7 +6,6 @@ import { AulaProvider } from "./context/AulaContext";
 
 function App() {
   return (
-    <div>
       <BrowserRouter>
         <AulaProvider>
         <Menu />
@@ -14,7 +13,6 @@ function App() {
         <Footer />
         </AulaProvider>
       </BrowserRouter>
-    </div>
   );
 }
 

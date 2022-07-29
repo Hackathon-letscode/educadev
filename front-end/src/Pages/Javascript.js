@@ -1,6 +1,7 @@
 
 
 import React, { useEffect, useState } from 'react'
+import Row from 'react-bootstrap/esm/Row';
 import Cards from '../Components/Card/Cards'
 import img1 from "../assets/imagemHack.png";
 import axios from "axios"
@@ -24,11 +25,11 @@ const Javascript = () => {
   },[])
 
   return (
-    <div>
+    <Row className="col-auto w-100 justify-content-evenly">
           {dados.map((dado) => {
             return <Cards key={dado._id} id={dado._id} titulo={dado.titulo} descricao={dado.descricao} imagem={img1}/>
           })}
-    </div>
+    </Row>
   )
 }
 

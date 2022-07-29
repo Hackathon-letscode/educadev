@@ -15,7 +15,7 @@ function Cards({titulo, descricao, imagem, id}) {
 
   return (
     <>
-      <Row className='m-auto'>
+      {/* <Row className='m-auto'> */}
         <Card className="mx-auto col-auto mt-3" style={{ width: "18rem" }}>
           <Card.Img variant="top" src={imagem} />
           <Card.Body>
@@ -26,7 +26,7 @@ function Cards({titulo, descricao, imagem, id}) {
             <Link to={`/videoaula/${id}`}><Button onClick={handleClick()} variant="primary">Ver Mais</Button></Link>
           </Card.Body>
         </Card>
-      </Row>
+      {/* </Row> */}
     </>
   );
 }
