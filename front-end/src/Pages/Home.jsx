@@ -19,7 +19,7 @@ const Home = () => {
               <Figure.Image src={img01} className="mb-0" />
             </Figure>
           </div>
-          <Container className="d-flex flex-column col-12 col-md-6 align-items-left justify-content-center container mb-3 mb-md-0 px-0">
+          <Container className="d-flex flex-column col-12 col-md-6 align-items-start justify-content-center container mb-3 mb-md-0 px-0 px-md-5 ">
             <div className="wrapper informacoes">
               <h2>O que quer aprender hoje?</h2>
               <p>Descubra aulas online e veja quais serão as próximas</p>
@@ -46,7 +46,7 @@ const Home = () => {
       </section>
       <section>
         <Row className="col-12 g-0">
-          <Container className="d-flex flex-column col-12 col-md-6 align-items-end justify-content-center mb-3 mb-md-0 px-0 container ps-md-5">
+          <Container className="d-flex flex-column col-12 col-md-6 align-items-end justify-content-center mb-3 mb-md-0 px-0 container px-md-5">
             <div className="wrapper informacoes">
               <h2>O que quer aprender hoje?</h2>
               <p>Descubra aulas online e veja quais serão as próximas</p>
