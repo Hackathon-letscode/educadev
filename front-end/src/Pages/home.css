@@ -1,0 +1,18 @@
+.mid-banner{
+    background-size: cover;
+}
+.mid-banner {
+height: 300px;
+position: relative;
+}
+
+.mid-banner h3{
+    position: absolute;
+    top: 20%;
+    right: 50px;
+    color: #fcce0d;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 3px 2px 4px rgba(191,191,191,0.28);
+}
