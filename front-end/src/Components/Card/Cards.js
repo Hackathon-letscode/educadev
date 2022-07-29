@@ -12,6 +12,7 @@ function Cards({titulo, descricao, imagem, id}) {
   }
   
   const [aula, setAula] = useAulas()
+  console.log(aula)
 
   return (
     <>

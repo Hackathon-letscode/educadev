@@ -10,7 +10,6 @@ import "./Rotas.css"
 
 const Rotas = () => {
   return (
-        <main className='main'>
             <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/home" element={<Home />} />
@@ -19,7 +18,6 @@ const Rotas = () => {
                 <Route path="/postaraula" element={<PostarAula />} />
                 <Route path="/videoaula" element={<VideoAula/>} />
             </Routes>
-        </main>
   );
 }
 
