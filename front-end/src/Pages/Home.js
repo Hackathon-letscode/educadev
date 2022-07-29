@@ -14,16 +14,21 @@ const Home = () => {
       </section>
       {/* <Container fluid> */}
       <section className="mb-0">
-        <Row>
-          <div className="col-6">
+        <Row className="d-flex flex-column">
+          {/* <div className="col-6">
             <Figure className="mb-0">
               <Figure.Image src={img01} className="mb-0" />
             </Figure>
-          </div>
-          <Container className="d-flex flex-column col-6 align-items-left justify-content-center container mb-0">
-            <h2>O que quer aprender hoje?</h2>
-            <p>Descubra aulas online e veja quais serão as próximas</p>
-            <Button className="w-25">Saiba mais</Button>
+          </div> */}
+          <Container className="container_figure d-flex flex-column col-12 align-items-left justify-content-center container mb-0">
+            <Figure className="mb-0">
+              <Figure.Image src={img01} className="mb-0" />
+            </Figure>
+            <div className="informacoes">
+              <h2>O que quer aprender hoje?</h2>
+              <p>Descubra aulas online e veja quais serão as próximas</p>
+              <Button className="button">Saiba mais</Button>
+            </div>
           </Container>
         </Row>
       </section>
@@ -42,17 +47,22 @@ const Home = () => {
         </Container>
       </section>
       <section>
-        <Row>
-          <Container className="d-flex flex-column col-6 align-items-right justify-content-center container ps-md-5 ps-3">
-            <h2>O que quer aprender hoje?</h2>
-            <p>Descubra aulas online e veja quais serão as próximas</p>
-            <Button className="w-25">Saiba mais</Button>
-          </Container>
-          <div className="col-6">
-            <Figure>
-              <Figure.Image src={img01} />
+      <Row className="d-flex flex-column">
+          {/* <div className="col-6">
+            <Figure className="mb-0">
+              <Figure.Image src={img01} className="mb-0" />
             </Figure>
-          </div>
+          </div> */}
+          <Container className="container_figure d-flex flex-column col-12 align-items-left justify-content-center container mb-0">
+            <Figure className="mb-0">
+              <Figure.Image src={img01} className="mb-0" />
+            </Figure>
+            <div className="informacoes">
+              <h2>O que quer aprender hoje?</h2>
+              <p>Descubra aulas online e veja quais serão as próximas</p>
+              <Button className="button">Saiba mais</Button>
+            </div>
+          </Container>
         </Row>
       </section>
       {/* </Container> */}

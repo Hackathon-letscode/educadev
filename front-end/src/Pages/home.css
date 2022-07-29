@@ -16,3 +16,21 @@ position: relative;
     font-size: 40px;
     text-shadow: 3px 2px 4px rgba(191,191,191,0.28);
 }
+
+.button {
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.089);
+    margin: 10px 0px;
+}
+
+.informacoes p {
+    padding: 10px;
+}
