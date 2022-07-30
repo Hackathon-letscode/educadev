@@ -63,7 +63,7 @@ const atualizarAulas = async (titulo, body) => {
         Aula = await AulasRepository.findByIdAndUpdate(Aula._id, body)
         return {
             statusCode: 200,
-            data: Aula
+            data: "Aula atualizada com sucesso!"
         }
     } 
     catch (error) {
