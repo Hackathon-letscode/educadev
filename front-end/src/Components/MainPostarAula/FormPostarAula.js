@@ -60,7 +60,7 @@ function FormPostarAula() {
             <Form.Control
               type="text"
               placeholder="Titúlo da aula"
-              onChange={(e) => setMateria(e.target.value)}
+              onChange={(e) => setMateria(e.target.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ""))}
             />
           </Form.Group>
 

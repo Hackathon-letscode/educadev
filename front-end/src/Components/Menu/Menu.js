@@ -32,8 +32,8 @@ function NavScrollExample() {
               <NavDropdown.Item href="/javascript">JavaScript</NavDropdown.Item>
               <NavDropdown.Item href="/matematica">matemática</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
+              <NavDropdown.Item href="/todasaulas">
+                Todas As Aulas
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/cadastro">Cadastre-se</Nav.Link>
