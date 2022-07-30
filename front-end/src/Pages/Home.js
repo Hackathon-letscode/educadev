@@ -23,7 +23,14 @@ const Home = () => {
             <div className="wrapper informacoes">
               <h2>O que quer aprender hoje?</h2>
               <p>Descubra aulas online e veja quais serão as próximas</p>
-              <Button className="button">Saiba mais</Button>
+              <div className="d-flex justify-content-around">
+                <Button href="/matematica" className="button">
+                  Matemética
+                </Button>
+                <Button href="/javascript" className="button">
+                  JavaScript
+                </Button>
+              </div>
             </div>
           </Container>
         </Row>
@@ -40,6 +47,9 @@ const Home = () => {
           <Row className="align-items-end col-12 justify-content-end">
             <h3 className="col-6 col-md-4 text-right">
               Seja você também um professor!
+              <Button href="postaraula" className="button">
+                Postar aula
+              </Button>
             </h3>
           </Row>
         </Container>
@@ -48,9 +58,11 @@ const Home = () => {
         <Row className="col-12 g-0">
           <Container className="d-flex flex-column col-12 col-md-6 align-items-end justify-content-center mb-3 mb-md-0 px-0 container px-md-5">
             <div className="wrapper informacoes">
-              <h2>O que quer aprender hoje?</h2>
-              <p>Descubra aulas online e veja quais serão as próximas</p>
-              <Button className="button">Saiba mais</Button>
+              <h2>Ainda não faz parte do nosso time?</h2>
+              {/* <p>Cadastre-se</p> */}
+              <Button href="cadastro" className="button">
+                Cadastre-se
+              </Button>
             </div>
           </Container>
           <div className="col-12 col-md-6 inverter-ordem mt-3 mt-md-0">
