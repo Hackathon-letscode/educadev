@@ -78,7 +78,7 @@ const atualizar = async (telefone, body) => {
     Usuario = await usuarioRepository.findByIdAndUpdate(Usuario._id, body);
     return {
       statusCode: 200,
-      data: Usuario,
+      data: "Usuário atualizado com sucesso!",
     };
   } catch (error) {
     return {
@@ -102,7 +102,7 @@ const remover = async (id) => {
 
     return {
       statusCode: 200,
-      data: Usuario,
+      data: "Usuário deletado com sucesso!",
     };
   } catch (error) {
     return {
