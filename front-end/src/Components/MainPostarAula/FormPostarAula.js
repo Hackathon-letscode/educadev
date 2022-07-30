@@ -45,18 +45,9 @@ function FormPostarAula() {
     <Container className="cadastro-container">
       <Form className="mt-5 col-md-6 col-lg-4" onSubmit={handleSubmit}>
         <fieldset>
-          {/* <Form.Group className="mb-3">
-          <Form.Label>Digite a matéria da aula:</Form.Label>
-          <Form.Control type="text" placeholder="Matéria da aula" controlId="formBasicPassword"/>
-        </Form.Group> */}
 
           <Form.Group className="mb-3">
             <Form.Label>Selecione a matéria:</Form.Label>
-            {/* <Form.Select onChange={(e) => setMateria(e.target.value)}>
-              <option>JavaScript</option>
-              <option>matemática</option>
-              <option>Português</option>
-            </Form.Select> */}
             <Form.Control
               type="text"
               placeholder="Titúlo da aula"
