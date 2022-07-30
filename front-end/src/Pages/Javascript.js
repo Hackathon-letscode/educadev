@@ -25,7 +25,7 @@ const Javascript = () => {
   },[])
 
   return (
-    <Row className="col-auto w-100 justify-content-evenly">
+    <Row className="col-auto justify-content-evenly">
            {dados.map((dado) => (
             dado.materia === "javascript"
             ? (<Cards key={dado._id} id={dado._id} titulo={dado.titulo} descricao={dado.descricao} imagem={img1}/>)
