@@ -1,60 +1,85 @@
-.mid-banner{
-    background-size: cover;
+.mid-banner {
+  background-size: cover;
 }
 .mid-banner {
-height: 300px;
-position: relative;
+  height: 300px;
+  position: relative;
 }
 
-.mid-banner h3{
-    position: absolute;
-    top: 20%;
-    right: 50px;
-    color: #fcce0d;
-    text-transform: uppercase;
+.mid-banner h3 {
+  position: absolute;
+  top: 20%;
+  right: 50px;
+  color: #fcce0d;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  text-shadow: 3px 2px 4px #14161961;
+}
+.informacoes{
+    max-width: 500px;
+    /* background: none; */
+}
+.informacoes h2{
     font-weight: 700;
+    text-transform: uppercase;
     font-size: 40px;
-    text-shadow: 3px 2px 4px rgba(191,191,191,0.28);
 }
-
+.mid-banner .container {
+  background: #fff;
+}
+.mid-banner .button {
+  margin-bottom: 10px;
+  width: 150px;
+  background-color: #069fbe;
+  border: none;
+  font-weight: 400;
+  text-transform: none;
+  text-shadow: none;
+}
+.mid-banner .btn:hover{
+  background-color: #fff;
+  color: #069fbe;
+}
+.wrapper .button {
+  margin-bottom: 10px;
+  width: 150px;
+  background-color: #069fbe;
+  border: none;
+}
+.wrapper .btn:hover{
+  background-color: #fff;
+  color: #069fbe;
+}
 @media (max-width: 1024px) {
-    .mid-banner h3 {
-        font-size: 30px;
-    }
-
-    .button {
-        margin-bottom: 10px;
-        width: 100px;
-    }
-    
-    .informacoes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.089);
-        margin: 10px 0px;
-    }
-    
-    .informacoes p {
-        padding: 10px;
-    }
-}
-
-/* .button {
+  .mid-banner {
+    background-position: -300px 0px;
+  }
+  .mid-banner h3 {
+    font-size: 25px;
+    top: 34%;
+    right: 0px;
+  }
+  .button {
     margin-bottom: 10px;
-    width: 100px;
-}
-
-.informacoes {
+  }
+  .informacoes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.089);
-    margin: 10px 0px;
+    background-color: #f8f9fa2b;
+    padding: 20px 0px;
+  }
+  .informacoes h2{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
 }
-
-.informacoes p {
+  .informacoes p {
     padding: 10px;
-} */
+  }
+  .inverter-ordem  {
+    order: -1;
+  }
+}

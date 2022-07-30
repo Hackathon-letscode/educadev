@@ -13,7 +13,7 @@ const Rotas = () => {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/cadastro" element={<Cadastro />} />
       <Route path="/javascript" exact element={<Javascript />} />
       <Route path="/matematica" element={<Matematica />} />
