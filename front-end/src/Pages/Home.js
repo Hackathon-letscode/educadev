@@ -23,7 +23,10 @@ const Home = () => {
             <div className="wrapper informacoes">
               <h2>O que quer aprender hoje?</h2>
               <p>Descubra aulas online e veja quais serão as próximas</p>
-              <div className="d-flex justify-content-around">
+              <div className="d-flex flex-wrap justify-content-between container-fluid">
+                <Button href="/todasaulas" className="button">
+                  Todas as aulas
+                </Button>
                 <Button href="/matematica" className="button">
                   Matemética
                 </Button>
